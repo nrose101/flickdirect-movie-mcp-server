@@ -1,0 +1,21 @@
+{
+  "name": "flickdirect-connect",
+  "version": "1.2.1",
+  "description": "Free movie MCP server for FlickDirect facts, regional dates and ratings, news, reviews, podcasts and original coverage links.",
+  "author": {
+    "name": "FlickDirect",
+    "url": "https://flickdirect.com/"
+  },
+  "homepage": "https://flickdirect.com/connect.aspx",
+  "repository": "https://github.com/nrose101/flickdirect-connect-plugin",
+  "keywords": [
+    "movies",
+    "television",
+    "FlickDirect",
+    "FDMD",
+    "movie MCP server"
+  ],
+  "logo": "assets/logo.png",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}
