@@ -7,7 +7,7 @@
     "url": "https://flickdirect.com/"
   },
   "homepage": "https://flickdirect.com/connect.aspx",
-  "repository": "https://github.com/nrose101/flickdirect-connect-plugin",
+  "repository": "https://github.com/nrose101/flickdirect-movie-mcp-server",
   "keywords": [
     "movies",
     "television",
