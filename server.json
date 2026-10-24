@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.flickdirect.connect/flickdirect-connect",
+  "title": "FlickDirect Connect: Movie MCP Server",
+  "description": "Free movie MCP server: TV and movie facts, news, reviews, podcasts, deals and source links.",
+  "version": "1.2.2",
+  "websiteUrl": "https://flickdirect.com/connect.aspx",
+  "icons": [
+    {
+      "src": "https://connect.flickdirect.com/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "76x76"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://connect.flickdirect.com/mcp"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/nrose101/flickdirect-movie-mcp-server",
+    "source": "github"
+  }
+}

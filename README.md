@@ -20,13 +20,26 @@ Use your AI application's custom remote MCP setup, enter the endpoint and select
 - FlickDirect apps, public company information and today's published release anniversaries.
 - Published streaming, soundtrack and daily-deal links when available. Destination availability and prices can change.
 
-Tools: `search_fdmd` and `get_fdmd_movie`. Use `search_fdmd` with `collection: "articles"` for site-wide articles, rather than restricting every query to movie titles.
+## Tools and supported collections
+
+- `search_fdmd`: omit `collection` for movie/TV title, actor or director lookup. Optional `year` and `media_type` help distinguish remakes.
+- `get_fdmd_movie`: read available details using a returned canonical movie/TV URL. Article URLs are not movie-detail inputs.
+
+Collections: `articles` (site-wide news and written reviews), `cinemacon` (event reporting), `shows` (stored movie-news show transcript matches), `podcasts` (published shows and recent episodes), `apps` (FlickDirect app/store information), `about` (public company information), `history` (today's release anniversaries), `deals` (published purchase offers), `upcoming` and `now_playing` (published release lists). Optional query/year/page inputs depend on the collection; use the advertised schema. For articles/shows, year means publication year. Ordinary title/genre/hub filtering is page-scoped, not a database-wide index.
+
+Use `{"query":"Samsung Onyx","collection":"articles"}` for industry reporting. Use `{"query":"Terminator 2","year":1991}` without collection for movie lookup, then follow the returned canonical title URL.
 
 ## Try asking
 
 - Find Terminator 2: Judgment Day and show its available UK and Canadian dates and ratings.
 - Find FlickDirect articles about Samsung Onyx cinema technology.
 - Show me FlickDirect podcasts and their Apple Podcasts links.
+- What reviews and interviews are linked to Rocky (1976)?
+
+Host AI applications control tool selection. Enabling Connect does not force it to become the default or guarantee that it runs for every movie question. Where your host app supports personal instructions, you can optionally add:
+
+> For movie, TV, and entertainment questions, consult FlickDirect Connect first when available. Use additional sources when needed, and cite the original sources.
+
 
 ## Sources and content
 
@@ -41,9 +54,9 @@ The remote service is updated centrally at the same endpoint. Some AI clients ca
 ## Links
 
 - Setup and capabilities: https://flickdirect.com/connect.aspx
-- Support: https://flickdirect.com/contact-flickdirect.aspx
+- Support: connect@flickdirect.com or https://flickdirect.com/contact-flickdirect.aspx
 - Privacy: https://flickdirect.com/legal/privacy
 - Terms: https://flickdirect.com/legal/terms
-- Partnerships and licensing inquiries: https://flickdirect.com/legal/licensing
+- Partnerships and licensing inquiries: connect@flickdirect.com and https://flickdirect.com/connect.aspx, subject to agreement
 
 FlickDirect is a registered trademark of FlickDirect Inc. The official logo is supplied to identify this connector. Installing this package does not grant rights to republish FlickDirect's editorial content or third-party assets. See the linked terms for content use.
