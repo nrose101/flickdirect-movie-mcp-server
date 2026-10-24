@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "flickdirect-connect",
-  "version": "1.2.2",
-  "description": "Free movie MCP server for FlickDirect facts, regional dates and ratings, news, reviews, podcasts and original coverage links.",
+  "version": "1.3.0",
+  "description": "Free movie MCP server: cross-title trivia, movie facts, regional dates and ratings, ranked news, interview passages and source links.",
   "author": {
     "name": "FlickDirect",
     "url": "https://flickdirect.com/"
@@ -19,16 +19,17 @@
     "com.openai": {
       "interface": {
         "displayName": "FlickDirect Connect",
-        "shortDescription": "Movie facts, news & links",
-        "longDescription": "Explore movies and television with FlickDirect Connect, FlickDirect's free, read-only movie MCP server.\n\nFind published movie facts, cast, trivia and quotes. Read country-specific release dates and ratings for the United States, United Kingdom, Canada and Germany when stored. Missing values stay omitted.\n\nSearch site-wide news and reviews, including industry stories without a movie association and CinemaCon reporting. Find stored transcript matches in movie-news shows, podcast shows and recent episodes with Apple Podcasts links, FlickDirect apps and public company information, daily release anniversaries, streaming and soundtrack links, and daily movie deals when available.\n\nReceive brief source previews and direct links to full FlickDirect coverage. Connect does not supply full articles, reviews, transcripts or photographs. Published YouTube watch links and embedded players are supported.\n\nNo FlickDirect account, key or subscription is required. Availability and tool refresh controls depend on your AI app. Compatibility does not imply an official partnership or endorsement.",
+        "shortDescription": "Movie facts, trivia & news",
+        "longDescription": "Explore movies and television with FlickDirect Connect, FlickDirect's free, read-only movie MCP server.\n\nFind published movie facts, cast, trivia and quotes. Discover production trivia across titles without guessing a movie, with optional topic, title, year and media filters. Read country-specific release dates and ratings for the United States, United Kingdom, Canada and Germany when stored. Missing values stay omitted.\n\nSearch site-wide news and reviews, including industry stories without a movie association and CinemaCon reporting. Find relevant bounded passages in articles, written reviews and eligible stored interview, video-review and movie-news show transcripts, podcast shows and recent episodes with Apple Podcasts links, FlickDirect apps and public company information, daily release anniversaries, streaming and soundtrack links, and daily movie deals when available.\n\nReceive brief source previews and direct links to full FlickDirect coverage. Connect does not supply full articles, reviews, transcripts or photographs. Published YouTube watch links and embedded players are supported.\n\nNo FlickDirect account, key or subscription is required. Availability and tool refresh controls depend on your AI app. Compatibility does not imply an official partnership or endorsement.",
         "developerName": "FlickDirect",
         "category": "Entertainment",
         "capabilities": [
           "Search movie and television titles",
           "Read cast, trivia and published movie facts",
+          "Discover published trivia across movie and TV titles",
           "Read available country-specific dates and ratings",
           "Search published news and review previews",
-          "Find CinemaCon and movie-news show transcript matches",
+          "Search ranked news, reviews and bounded matching passages",
           "Find podcasts, apps and public company information",
           "Find streaming, soundtrack and daily-deal links"
         ],
@@ -37,6 +38,7 @@
         "privacyPolicyURL": "https://flickdirect.com/legal/privacy",
         "termsOfServiceURL": "https://flickdirect.com/legal/terms",
         "defaultPrompt": [
+          "Tell me some published movie production trivia, with links to the sources.",
           "Find Terminator 2 and show the UK and Canadian dates and ratings FlickDirect has available.",
           "Find FlickDirect articles about Samsung Onyx cinema technology.",
           "Show me FlickDirect podcasts and their Apple Podcasts links."
