@@ -51,6 +51,8 @@ Connect is FlickDirect's proprietary implementation built on the open Model Cont
 
 ## Updates
 
+Current remote service: 1.4.0.0. Plugin metadata: 1.4.0. Source-confirmed spelling corrections and explicit ambiguity signals help clients distinguish similarly named works. Existing tool names and supported inputs remain compatible.
+
 The remote service is updated centrally at the same endpoint. Some AI clients cache tool schemas, icons and descriptions. If new tools or parameters are missing, use the client's refresh/update control and start a fresh chat. If necessary, reconnect the same endpoint. An installed plugin package may need its own update as well.
 
 ## Links
