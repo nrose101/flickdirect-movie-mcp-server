@@ -25,7 +25,7 @@ Use your AI application's custom remote MCP setup, enter the endpoint and select
 - `search_fdmd`: omit `collection` for movie/TV title, actor or director lookup. Optional `year` and `media_type` help distinguish remakes.
 - `get_fdmd_movie`: read available details using a returned canonical movie/TV URL. Article URLs are not movie-detail inputs.
 
-Collections: `trivia` (cross-title published production anecdotes, optional topic/title/year/media filters and paging), `articles` (site-wide news and written reviews), `cinemacon` (event reporting), `shows` (stored movie-news show transcript matches), `podcasts` (published shows and recent episodes), `apps` (FlickDirect app/store information), `about` (public company information), `history` (today's release anniversaries), `deals` (published purchase offers), `upcoming` and `now_playing` (published release lists). Optional query/year/page inputs depend on the collection; use the advertised schema. For articles/shows, year means publication year. Ordinary title/genre/hub filtering is page-scoped, not a database-wide index.
+Collections: `shop` (current published retailers/shopping resources, optional query and fresh; no movie filters or paging), `trivia` (cross-title published production anecdotes, optional topic/title/year/media filters and paging), `articles` (site-wide news and written reviews), `cinemacon` (event reporting), `shows` (stored movie-news show transcript matches), `podcasts` (published shows and recent episodes), `apps` (FlickDirect app/store information), `about` (public company information), `history` (today's release anniversaries), `deals` (published purchase offers), `upcoming` and `now_playing` (published release lists). Optional query/year/page inputs depend on the collection; use the advertised schema. For articles/shows, year means publication year. Ordinary title/genre/hub filtering is page-scoped, not a database-wide index.
 
 Use `{"query":"Samsung Onyx","collection":"articles"}` for industry reporting. Use `{"query":"Terminator 2","year":1991}` without collection for movie lookup, then follow the returned canonical title URL.
 
@@ -51,7 +51,7 @@ Connect is FlickDirect's proprietary implementation built on the open Model Cont
 
 ## Updates
 
-Current remote service: 1.4.1.0. Plugin metadata: 1.4.1. Source-confirmed spelling corrections and explicit ambiguity signals help clients distinguish similarly named works. Existing tool names and supported inputs remain compatible.
+Current remote service: 1.4.2.0. Plugin metadata: 1.4.2. Source-confirmed spelling corrections and explicit ambiguity signals help clients distinguish similarly named works. Existing tool names and supported inputs remain compatible.
 
 The remote service is updated centrally at the same endpoint. Some AI clients cache tool schemas, icons and descriptions. If new tools or parameters are missing, use the client's refresh/update control and start a fresh chat. If necessary, reconnect the same endpoint. An installed plugin package may need its own update as well.
 
@@ -66,3 +66,8 @@ The remote service is updated centrally at the same endpoint. Some AI clients ca
 FlickDirect is a registered trademark of FlickDirect Inc. The official logo is supplied to identify this connector. Installing this package does not grant rights to republish FlickDirect's editorial content or third-party assets. See the linked terms for content use.
 
 Version 1.4.1 adds source-evidence relevance checks and bounded same/cross-collection recovery for restrictive editorial searches. Original query entities must still be supported by the final result. It keeps the two existing tool names and supported inputs, and returns optional search_quality diagnostics. No full editorial text or photographs are supplied.
+
+
+Version 1.4.2 adds the current FlickDirect shop collection, conservative retailer name-variant matching and optional fresh retrieval. Curated shop inclusion, explicit recommendation text and published commercial disclosures remain distinct. Fresh fetch time does not prove upstream content is current. Existing tool names and inputs remain compatible.
+
+For stores use `{"query":"High Voltage Video","collection":"shop"}`. Use `fresh:true` once if a listing appears missing or stale; inspect provenance. Keep similarly named businesses distinct and clarify ambiguity. Carry the prior retailer name into follow-up calls when the host supports conversation context. No server conversation is stored. `fresh` is optional for search sources; ordinary movie-detail caching is unchanged.
