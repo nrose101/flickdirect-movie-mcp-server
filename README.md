@@ -51,7 +51,7 @@ Connect is FlickDirect's proprietary implementation built on the open Model Cont
 
 ## Updates
 
-Current remote service: 1.4.0.0. Plugin metadata: 1.4.0. Source-confirmed spelling corrections and explicit ambiguity signals help clients distinguish similarly named works. Existing tool names and supported inputs remain compatible.
+Current remote service: 1.4.1.0. Plugin metadata: 1.4.1. Source-confirmed spelling corrections and explicit ambiguity signals help clients distinguish similarly named works. Existing tool names and supported inputs remain compatible.
 
 The remote service is updated centrally at the same endpoint. Some AI clients cache tool schemas, icons and descriptions. If new tools or parameters are missing, use the client's refresh/update control and start a fresh chat. If necessary, reconnect the same endpoint. An installed plugin package may need its own update as well.
 
@@ -64,3 +64,5 @@ The remote service is updated centrally at the same endpoint. Some AI clients ca
 - Partnerships and licensing inquiries: connect@flickdirect.com and https://flickdirect.com/connect.aspx, subject to agreement
 
 FlickDirect is a registered trademark of FlickDirect Inc. The official logo is supplied to identify this connector. Installing this package does not grant rights to republish FlickDirect's editorial content or third-party assets. See the linked terms for content use.
+
+Version 1.4.1 adds source-evidence relevance checks and bounded same/cross-collection recovery for restrictive editorial searches. Original query entities must still be supported by the final result. It keeps the two existing tool names and supported inputs, and returns optional search_quality diagnostics. No full editorial text or photographs are supplied.
