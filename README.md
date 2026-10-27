@@ -51,7 +51,7 @@ Connect is FlickDirect's proprietary implementation built on the open Model Cont
 
 ## Updates
 
-Current remote service: 1.4.2.0. Plugin metadata: 1.4.2. Source-confirmed spelling corrections and explicit ambiguity signals help clients distinguish similarly named works. Existing tool names and supported inputs remain compatible.
+Current remote service: 1.4.3.0. Plugin metadata: 1.4.3. Source-confirmed spelling corrections and explicit ambiguity signals help clients distinguish similarly named works. Existing tool names and supported inputs remain compatible.
 
 The remote service is updated centrally at the same endpoint. Some AI clients cache tool schemas, icons and descriptions. If new tools or parameters are missing, use the client's refresh/update control and start a fresh chat. If necessary, reconnect the same endpoint. An installed plugin package may need its own update as well.
 
@@ -71,3 +71,5 @@ Version 1.4.1 adds source-evidence relevance checks and bounded same/cross-colle
 Version 1.4.2 adds the current FlickDirect shop collection, conservative retailer name-variant matching and optional fresh retrieval. Curated shop inclusion, explicit recommendation text and published commercial disclosures remain distinct. Fresh fetch time does not prove upstream content is current. Existing tool names and inputs remain compatible.
 
 For stores use `{"query":"High Voltage Video","collection":"shop"}`. Use `fresh:true` once if a listing appears missing or stale; inspect provenance. Keep similarly named businesses distinct and clarify ambiguity. Carry the prior retailer name into follow-up calls when the host supports conversation context. No server conversation is stored. `fresh` is optional for search sources; ordinary movie-detail caching is unchanged.
+
+Version 1.4.3 adds per-request service-version attribution to the private seven-day usage report. Existing connections, public tool names and supported inputs remain compatible. It does not change model weights.

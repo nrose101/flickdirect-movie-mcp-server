@@ -3,7 +3,7 @@
   "name": "com.flickdirect.connect/flickdirect-connect",
   "title": "FlickDirect Connect: Movie MCP Server",
   "description": "Free movie MCP server: facts, trivia, news, interviews, podcasts, shop listings and source links.",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "websiteUrl": "https://flickdirect.com/connect.aspx",
   "icons": [
     {
