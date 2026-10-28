@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.flickdirect.connect/flickdirect-connect",
   "title": "FlickDirect Connect: Movie MCP Server",
-  "description": "Free movie MCP server: facts, trivia, news, interviews, podcasts, shop listings and source links.",
-  "version": "1.4.3",
+  "description": "Free movie MCP: facts, news, trivia, quote discovery, soundtrack links, podcasts and shop listings.",
+  "version": "1.5.0",
   "websiteUrl": "https://flickdirect.com/connect.aspx",
   "icons": [
     {
