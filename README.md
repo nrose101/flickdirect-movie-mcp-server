@@ -25,7 +25,7 @@ Use your AI application's custom remote MCP setup, enter the endpoint and select
 - `search_fdmd`: omit `collection` for movie/TV title, actor or director lookup. Optional `year` and `media_type` help distinguish remakes.
 - `get_fdmd_movie`: read available details using a returned canonical movie/TV URL. Article URLs are not movie-detail inputs.
 
-Collections: `shop` (current published retailers/shopping resources, optional query and fresh; no movie filters or paging), `quotes` (quote discovery summaries and source links, never original dialogue), `soundtracks` (published soundtrack/player and Additional Songs links), `trivia` (cross-title published production anecdotes, optional topic/title/year/media filters and paging), `articles` (site-wide news and written reviews), `cinemacon` (event reporting), `shows` (stored movie-news show transcript matches), `podcasts` (published shows and recent episodes), `apps` (FlickDirect app/store information), `about` (public company information), `history` (today's release anniversaries), `deals` (published purchase offers), `upcoming` and `now_playing` (published release lists). Optional query/year/page inputs depend on the collection; use the advertised schema. For articles/shows, year means publication year. Ordinary title/genre/hub filtering is page-scoped, not a database-wide index.
+Collections: `shop` (current published retailers/shopping resources, optional query and fresh; no movie filters or paging), `quotes` (quote descriptions, supplied brief exact excerpts and canonical source links), `soundtracks` (published soundtrack/player and Additional Songs links), `trivia` (cross-title published production anecdotes, optional topic/title/year/media filters and paging), `articles` (site-wide news and written reviews), `cinemacon` (event reporting), `shows` (stored movie-news show transcript matches), `podcasts` (published shows and recent episodes), `apps` (FlickDirect app/store information), `about` (public company information), `history` (today's release anniversaries), `deals` (published purchase offers), `upcoming` and `now_playing` (published release lists). Optional query/year/page inputs depend on the collection; use the advertised schema. For articles/shows, year means publication year. Ordinary title/genre/hub filtering is page-scoped, not a database-wide index.
 
 Use `{"query":"Samsung Onyx","collection":"articles"}` for industry reporting. Use `{"query":"Terminator 2","year":1991}` without collection for movie lookup, then follow the returned canonical title URL.
 
@@ -51,7 +51,7 @@ Connect is FlickDirect's proprietary implementation built on the open Model Cont
 
 ## Updates
 
-Current remote service: 1.5.0.0. Plugin metadata: 1.5.0. Source-confirmed spelling corrections and explicit ambiguity signals help clients distinguish similarly named works. Existing tool names and supported inputs remain compatible.
+Current remote service: 1.5.1.0. Plugin metadata: 1.5.1. Source-confirmed spelling corrections and explicit ambiguity signals help clients distinguish similarly named works. Existing tool names and supported inputs remain compatible.
 
 The remote service is updated centrally at the same endpoint. Some AI clients cache tool schemas, icons and descriptions. If new tools or parameters are missing, use the client's refresh/update control and start a fresh chat. If necessary, reconnect the same endpoint. An installed plugin package may need its own update as well.
 
@@ -76,3 +76,7 @@ Version 1.4.3 adds per-request service-version attribution to the private seven-
 
 
 Version 1.5 adds quote discovery summaries and source links, without original dialogue, and soundtrack/player plus Additional Songs links with published affiliate parameters. These are availability summaries, not invented dialogue paraphrases; music links do not establish track lists or scene placement. Bounded scheduling and finite caching preserve the existing two read-only tools and legacy inputs. Optional fresh retrieval also works for movie details. No paid model calls or model training.
+
+## 1.5.1 canonical citations and title defaults
+
+Version 1.5.1 adds canonical citation bundles for ordinary questions, title/year normalization, and reviewed T2 and X2/X-Men 2 defaults verified against returned movie identities. Explicit full-title/year context overrides defaults. Optional brief exact quote excerpts use complete sentences with an ellipsis for omitted following dialogue; otherwise use a natural source-page description and link. Existing tools, inputs, affiliate links, privacy and seven-day retention remain compatible. Host applications control tool selection and final answers; no model training or automatic deployment.
