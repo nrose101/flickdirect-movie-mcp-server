@@ -1,7 +1,7 @@
 {
   "name": "flickdirect-connect",
-  "version": "1.5.1",
-  "description": "Free movie MCP server: facts, news, reviews, trivia, quote discovery, soundtrack links, podcasts and shops.",
+  "version": "1.5.6",
+  "description": "Search FlickDirect movie facts, entertainment reporting, interviews, podcasts and published provider links.",
   "author": {
     "name": "FlickDirect Inc",
     "url": "https://flickdirect.com/"
