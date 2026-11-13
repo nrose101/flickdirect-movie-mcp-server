@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "flickdirect-connect",
-  "version": "1.5.6",
+  "version": "1.5.8",
   "description": "Search FlickDirect movie facts, entertainment reporting, interviews, podcasts and published provider links.",
   "author": {
     "name": "FlickDirect Inc",
@@ -18,9 +18,9 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "FlickDirect Connect",
+        "displayName": "FlickDirect Movie MCP Server",
         "shortDescription": "Movie facts, trivia & news",
-        "longDescription": "Research movies, television and cinema-industry reporting with FlickDirect Connect, a read-only movie MCP server from FlickDirect Inc.\n\nSearch published movie and television facts, cast and crew, country-specific release dates and ratings when stored, production trivia and brief quote excerpts with source links. Search news, reviews, CinemaCon reporting, interviews and eligible stored transcripts. Discover podcast shows and episodes and recent uploads from FlickDirect's three published YouTube channels. Recent channel feeds and the podcast archive have bounded coverage.\n\nAdditional collections return published retailer listings, daily movie offers, streaming and soundtrack/provider destinations, app information, public company information and release anniversaries. Some destinations offer digital purchases, rentals or subscriptions and some links contain affiliate tracking. Connect returns these links and available offer information but does not operate checkout or process payments. Shop inclusion is distinct from an explicit recommendation.\n\nResults include canonical FlickDirect source links and retrieval evidence. Summaries and previews do not replace the full source. Missing values remain omitted; retrieval time does not guarantee that upstream information or offers are current. Connect does not supply full articles, reviews, transcripts or photographs. Published YouTube players depend on the host application's rendering support.\n\nExisting search_fdmd and get_fdmd_movie calls remain supported as compatibility aliases for search_flickdirect_content and get_flickdirect_movie_details. Compatibility with an AI application does not imply its endorsement or an official partnership.",
+        "longDescription": "Research movies, television and cinema-industry reporting with FlickDirect Connect, a read-only movie MCP server from FlickDirect Inc.\n\nSearch published movie and television facts, cast and crew, country-specific release dates and ratings when stored, production trivia and brief quote excerpts with source links. Search news, reviews, CinemaCon reporting, interviews and eligible stored transcripts. Discover podcast shows and episodes and recent uploads from FlickDirect's three published YouTube channels. Recent channel feeds and the podcast archive have bounded coverage.\n\nAdditional collections return soundtrack/provider destinations, app information, public company information and release anniversaries. Movie details include published streaming destinations. Provider availability and terms are controlled by the linked services. Connect does not operate checkout or process payments.\n\nResults include canonical FlickDirect source links and retrieval evidence. Summaries and previews do not replace the full source. Missing values remain omitted; retrieval time does not guarantee that upstream information or offers are current. Connect does not supply full articles, reviews, transcripts or photographs. Published YouTube players depend on the host application's rendering support.\n\nExisting search_fdmd and get_fdmd_movie calls remain supported as compatibility aliases for search_flickdirect_content and get_flickdirect_movie_details. Compatibility with an AI application does not imply its endorsement or an official partnership.",
         "developerName": "FlickDirect Inc",
         "category": "Entertainment",
         "capabilities": [
@@ -28,7 +28,7 @@
           "Find news, reviews, interviews and CinemaCon reporting",
           "Discover trivia, brief quote excerpts and source links",
           "Find podcasts and recent YouTube uploads",
-          "Read published shop listings, offers and streaming or soundtrack destinations",
+          "Read published streaming and soundtrack destinations",
           "Read public company and app information"
         ],
         "websiteURL": "https://flickdirect.com/connect.aspx",
@@ -38,8 +38,7 @@
         "defaultPrompt": [
           "Tell me some published movie production trivia, with links to the sources.",
           "Find Terminator 2 and show the UK and Canadian dates and ratings FlickDirect has available.",
-          "Find FlickDirect articles about Samsung Onyx cinema technology.",
-          "Show me FlickDirect podcasts and their Apple Podcasts links."
+          "Find FlickDirect articles about Samsung Onyx cinema technology."
         ],
         "brandColor": "#854EC2",
         "composerIcon": "./assets/composer-icon.png",
