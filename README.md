@@ -8,7 +8,7 @@ FlickDirect Connect is FlickDirect Inc's read-only movie MCP server for AI appli
 - Transport: Streamable HTTP
 - Authentication: None. No FlickDirect account or API key is required.
 - Setup guide: https://flickdirect.com/connect.aspx
-- Current deployed service: **1.5.8.0**. Plugin metadata: **1.5.8**.
+- Current deployed service: **1.5.9.0**. Plugin metadata: **1.5.9**.
 
 Use your AI application's custom remote MCP settings and select no authentication. Application support, account requirements and installation controls vary. A custom connection is separate from marketplace approval. Compatibility does not imply an official partnership or endorsement.
 
@@ -17,7 +17,7 @@ Use your AI application's custom remote MCP settings and select no authenticatio
 - Movie and television identity, cast, crew, published trivia and brief supplied quote excerpts, with canonical source links.
 - Country-specific dates and ratings for the United States, United Kingdom, Canada and Germany when stored. Missing values stay omitted.
 - Site-wide news, written reviews, CinemaCon and cinema-industry reporting, interviews and eligible stored transcript passages.
-- Recent public uploads from three FlickDirect YouTube channels. These feeds are not complete channel archives; older site-indexed interviews/videos remain searchable through articles.
+- Recent public uploads from three FlickDirect YouTube channels. Healthy-channel results remain available when another channel feed times out, with incomplete coverage explicitly reported. These feeds are not complete channel archives; older site-indexed interviews/videos remain searchable through articles.
 - FlickDirect podcast shows and current episodes, plus bounded published FlickRadio archive discovery. Apple Podcasts links preserve supplied affiliate parameters. No audio download or transcription occurs.
 - Published streaming, soundtrack/player and Additional Songs destinations, including supplied Amazon and Apple links. Availability may change.
 - FlickDirect app information, company information and daily release anniversaries.

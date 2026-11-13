@@ -14,3 +14,7 @@ Do not reproduce full articles, reviews, transcripts or scripts, invent roles or
 Do not call shop or deals: retailer listings and daily deals are no longer supported. Cached calls receive unsupported coverage, not proof of an absent store or offer. Movie streaming, Amazon and Apple music/podcast links remain supported. Preserve their published tracking parameters.
 
 A longer title that returns no matches may use one bounded shorter-phrase lookup. Returned candidates must retain all original title words in order and the requested year/media constraints. No invented title or identity association is allowed.
+
+## Release 1.5.9 video source handling
+
+Recent uploads use bounded parallel retrieval across the three verified channels. If a channel fails or times out, healthy-channel results can still be returned. Respect coverage_incomplete and each source_status; a partial result or unavailable feed does not establish absent coverage. Use articles separately for older site-indexed interviews and stored transcripts.
