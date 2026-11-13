@@ -1,4 +1,4 @@
-# FlickDirect Connect: Movie MCP Server
+# FlickDirect Movie MCP Server
 
 FlickDirect Connect is FlickDirect Inc's read-only movie MCP server for AI applications. Public server access is free. This repository contains only public connection manifests, the research skill, setup information and approved brand assets. The proprietary hosted service implementation is maintained privately.
 
