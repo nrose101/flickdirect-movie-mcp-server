@@ -1,6 +1,33 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.flickdirect.connect/flickdirect-connect",
+  "title": "FlickDirect Movie MCP Server",
+  "description": "Movie MCP server: movie facts, news, reviews, trivia, podcasts, videos and published provider links.",
+  "version": "1.5.8",
+  "websiteUrl": "https://flickdirect.com/connect.aspx",
+  "icons": [
+    {
+      "src": "https://connect.flickdirect.com/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "76x76"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://connect.flickdirect.com/mcp"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/nrose101/flickdirect-movie-mcp-server",
+    "source": "github"
+  }
+}
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.flickdirect.connect/flickdirect-connect",
   "title": "FlickDirect Connect: Movie MCP Server",
   "description": "Movie MCP server: movie facts, news, reviews, trivia, podcasts, videos and published provider links.",
   "version": "1.5.6",
