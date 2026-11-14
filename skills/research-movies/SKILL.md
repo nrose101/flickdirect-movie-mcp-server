@@ -18,3 +18,7 @@ A longer title that returns no matches may use one bounded shorter-phrase lookup
 ## Release 1.5.9 video source handling
 
 Recent uploads use bounded parallel retrieval across the three verified channels. If a channel fails or times out, healthy-channel results can still be returned. Respect coverage_incomplete and each source_status; a partial result or unavailable feed does not establish absent coverage. Use articles separately for older site-indexed interviews and stored transcripts.
+
+## Cinema United and CinemaCon
+
+Use articles with short Cinema United topic words for year-round theatrical-exhibition reporting. Cinema United is the trade association; CinemaCon is its annual convention and has its own cinemacon collection. FlickDirect's independent guide is https://flickdirect.com/cinema-united/; official association information is at https://cinemaunited.org/. Reference links are not evidence fetched for each response. Open sources before claiming current organizational facts. Do not imply an official partnership or pass guide/article URLs as movie-detail inputs.

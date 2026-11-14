@@ -8,7 +8,7 @@ FlickDirect Connect is FlickDirect Inc's read-only movie MCP server for AI appli
 - Transport: Streamable HTTP
 - Authentication: None. No FlickDirect account or API key is required.
 - Setup guide: https://flickdirect.com/connect.aspx
-- Current deployed service: **1.5.9.0**. Plugin metadata: **1.5.9**.
+- Current deployed service: **1.5.11.0**. Plugin metadata: **1.5.11**.
 
 Use your AI application's custom remote MCP settings and select no authentication. Application support, account requirements and installation controls vary. A custom connection is separate from marketplace approval. Compatibility does not imply an official partnership or endorsement.
 
@@ -16,7 +16,7 @@ Use your AI application's custom remote MCP settings and select no authenticatio
 
 - Movie and television identity, cast, crew, published trivia and brief supplied quote excerpts, with canonical source links.
 - Country-specific dates and ratings for the United States, United Kingdom, Canada and Germany when stored. Missing values stay omitted.
-- Site-wide news, written reviews, CinemaCon and cinema-industry reporting, interviews and eligible stored transcript passages.
+- Site-wide news, written reviews, Cinema United association reporting, CinemaCon convention coverage and cinema-industry reporting, interviews and eligible stored transcript passages.
 - Recent public uploads from three FlickDirect YouTube channels. Healthy-channel results remain available when another channel feed times out, with incomplete coverage explicitly reported. These feeds are not complete channel archives; older site-indexed interviews/videos remain searchable through articles.
 - FlickDirect podcast shows and current episodes, plus bounded published FlickRadio archive discovery. Apple Podcasts links preserve supplied affiliate parameters. No audio download or transcription occurs.
 - Published streaming, soundtrack/player and Additional Songs destinations, including supplied Amazon and Apple links. Availability may change.
@@ -35,7 +35,7 @@ Supported collections:
 
 | Collection | Published source scope |
 | --- | --- |
-| articles | News, reviews, interviews and eligible stored transcripts |
+| articles | News, reviews, Cinema United industry reporting, interviews and eligible stored transcripts |
 | cinemacon | CinemaCon reporting |
 | shows | Movie-news-show transcripts, not all interviews or TV titles |
 | videos | Recent uploads from the three published YouTube channels |
@@ -45,6 +45,8 @@ Supported collections:
 | soundtracks | Published soundtrack players and Additional Songs provider links |
 | upcoming / now_playing | Published release lists with optional date filters |
 | apps / about / history | App information, company information and daily anniversaries |
+
+Cinema United is the theatrical-exhibition trade association; CinemaCon is its annual convention. Search year-round association reporting with `collection=articles` and short keywords such as `Cinema United`. See [FlickDirect's independent Cinema United guide](https://flickdirect.com/cinema-united/) and the [official association website](https://cinemaunited.org/). These reference links are distinct from evidence fetched for a tool response; no official partnership is implied.
 
 A longer title miss may make one shorter-phrase lookup within the same source budget and eight-second deadline. Candidates must retain all original title words in order and requested year/media filters.
 
