@@ -8,7 +8,7 @@ FlickDirect Connect is FlickDirect Inc's read-only movie MCP server for AI appli
 - Transport: Streamable HTTP
 - Authentication: None. No FlickDirect account or API key is required.
 - Setup guide: https://flickdirect.com/connect.aspx
-- Current deployed service: **1.5.11.0**. Plugin metadata: **1.5.11**.
+- Current deployed service: **1.5.12.0**. Plugin metadata: **1.5.12**.
 
 Use your AI application's custom remote MCP settings and select no authentication. Application support, account requirements and installation controls vary. A custom connection is separate from marketplace approval. Compatibility does not imply an official partnership or endorsement.
 
