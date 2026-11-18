@@ -8,7 +8,7 @@ FlickDirect Connect is FlickDirect Inc's read-only movie MCP server for AI appli
 - Transport: Streamable HTTP
 - Authentication: None. No FlickDirect account or API key is required.
 - Setup guide: https://flickdirect.com/connect.aspx
-- Current deployed service: **1.5.12.0**. Plugin metadata: **1.5.12**.
+- Current deployed service: **1.5.13.0**. Plugin metadata: **1.5.13**.
 
 Use your AI application's custom remote MCP settings and select no authentication. Application support, account requirements and installation controls vary. A custom connection is separate from marketplace approval. Compatibility does not imply an official partnership or endorsement.
 
@@ -44,7 +44,8 @@ Supported collections:
 | quotes | Cross-title quote discovery and supplied brief excerpts/source links |
 | soundtracks | Published soundtrack players and Additional Songs provider links |
 | upcoming / now_playing | Published release lists with optional date filters |
-| apps / about / history | App information, company information and daily anniversaries |
+| apps / about | App information and company information |
+| history | Today's release anniversaries, with optional case-insensitive title substring, original release year and media-type filters |
 
 Cinema United is the theatrical-exhibition trade association; CinemaCon is its annual convention. Search year-round association reporting with `collection=articles` and short keywords such as `Cinema United`. See [FlickDirect's independent Cinema United guide](https://flickdirect.com/cinema-united/) and the [official association website](https://cinemaunited.org/). These reference links are distinct from evidence fetched for a tool response; no official partnership is implied.
 
@@ -60,7 +61,7 @@ Examples:
 {"query":"Street Fighter Ken interview","collection":"articles"}
 ```
 
-Bounded editorial recovery requires published entity/source-kind evidence. Nonempty unrelated results are not successful retrieval. Distinguish no results, unavailable sources and busy responses. A fresh request bypasses local cached responses and requests upstream revalidation; fetch time alone does not prove upstream currentness. Retired shop/deals inputs remain accepted only to return unsupported coverage without a source request. They do not establish absence of a store or offer.
+Bounded editorial recovery requires published entity/source-kind evidence. Nonempty unrelated results are not successful retrieval. Distinguish no results, unavailable sources and busy responses. A fresh request bypasses local cached responses and requests upstream revalidation; fetch time alone does not prove upstream currentness.
 
 ## Sources, media and commerce
 
