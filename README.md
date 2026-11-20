@@ -8,7 +8,7 @@ FlickDirect Connect is FlickDirect Inc's read-only movie MCP server for AI appli
 - Transport: Streamable HTTP
 - Authentication: None. No FlickDirect account or API key is required.
 - Setup guide: https://flickdirect.com/connect.aspx
-- Current deployed service: **1.5.13.0**. Plugin metadata: **1.5.13**.
+- Current deployed service: **1.5.14.0**. Plugin metadata: **1.5.14**.
 
 Use your AI application's custom remote MCP settings and select no authentication. Application support, account requirements and installation controls vary. A custom connection is separate from marketplace approval. Compatibility does not imply an official partnership or endorsement.
 
@@ -49,7 +49,7 @@ Supported collections:
 
 Cinema United is the theatrical-exhibition trade association; CinemaCon is its annual convention. Search year-round association reporting with `collection=articles` and short keywords such as `Cinema United`. See [FlickDirect's independent Cinema United guide](https://flickdirect.com/cinema-united/) and the [official association website](https://cinemaunited.org/). These reference links are distinct from evidence fetched for a tool response; no official partnership is implied.
 
-A longer title miss may make one shorter-phrase lookup within the same source budget and eight-second deadline. Candidates must retain all original title words in order and requested year/media filters.
+A longer title miss may make one shorter-phrase lookup within the same source budget and eight-second deadline. Candidates must retain all original title words in order and requested year/media filters. Numbered Part, Chapter and Volume searches require the named installment to appear together with its title anchor in published evidence; unrelated ordinal words are insufficient.
 
 Use short topic keywords, retain requested entities and constraints, and follow the advertised schema for each collection's optional filters. Article/show year means publication year. Ordinary title/genre/list filtering is page-scoped, not a database-wide index.
 
