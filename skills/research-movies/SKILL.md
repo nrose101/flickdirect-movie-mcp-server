@@ -24,3 +24,7 @@ Use articles with short Cinema United topic words for year-round theatrical-exhi
 ## Release-anniversary history
 
 Use collection=history for today's published movie/TV release-anniversary list. Optional title is a case-insensitive substring filter and combines with original release year and media_type. These filters narrow only the current daily list; a missing match does not establish an absent database title.
+
+## Credit presentation
+
+For television use created_by (or the legacy creators alias) and label it Created By, never Directors. Do not substitute director credits when creator credits are missing. Keep all supplied writing credits together on one Writers line, including screenwriters, story writers, source-book authors and credited original-character writers.
